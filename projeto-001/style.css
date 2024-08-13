@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --cor1: #364022;
+    --cor2: #727355;
+    --cor3: #F2F2F2;
+    --cor4: #591902;
+    --cor5: #000000;
+}
+
+body {
+    background-color: var(--cor3);
+}
+
+header {
+    background-color: var(--cor2);
+}
+
+header h1 {
+    padding: 20px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+#burgermenu {
+    color: #364022;
+    padding: 10px;
+    display: block;
+    text-align: end;
+    cursor: pointer;
+    width: 10px;
+    position: absolute;
+}
+
+menu {
+    display: none;
+}
+
+.pos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+menu ul {
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    padding: 5px;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--cor1);
+    border-radius: 10px;
+    width: 200px;
+    font-size: 1em;
+}
+
+a:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    transition: .5s;
+}
+
+#btnlogin {
+    display: block;
+    padding: 5px;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--cor1);
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#btnlogin:hover {
+    background-color: var(--cor4);
+    color: var(--cor3);
+    transition: .5s;
+}
+
+section {
+    padding: 20px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 15px;
+}
