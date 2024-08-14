@@ -23,6 +23,7 @@ body {
 
 header {
     background-color: var(--cor2);
+    width: 100vw;
 }
 
 header h1 {
