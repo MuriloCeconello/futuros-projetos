@@ -15,6 +15,7 @@ function clickMenu() {
         menu.style.display = 'none'
     } else {
         menu.style.display = 'block'
-        burger.style.position = 'relative'
+        burger.style.position = 'absolute'
+        burger.style.right = '30px'
     }
 }

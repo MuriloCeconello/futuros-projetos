@@ -40,6 +40,8 @@ header h1 {
     cursor: pointer;
     width: 10px;
     position: absolute;
+    top: 40px;
+    right: 30px;
 }
 
 menu {
