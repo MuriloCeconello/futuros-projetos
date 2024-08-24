@@ -1,6 +1,9 @@
 var sidebar = document.getElementById('list')
 var toggleBtn = document.querySelector('.toggle-btn')
 
+toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('active')
+})
 
 function mudouTela() {
     if (window.innerWidth >= 768) {
@@ -13,7 +16,7 @@ function mudouTela() {
 function clickBurger() {
     if (sidebar.style.display == 'block') {
         sidebar.style.display = 'none'
-    }else{
+    } else {
         sidebar.style.display = 'block'
     }
 }
