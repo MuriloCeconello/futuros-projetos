@@ -125,10 +125,6 @@
         font-size: 1.1em;
     }
 
-    #check:checked~#search-box input {
-        
-    }
-
     #search-box #search-icon {
         position: absolute;
         top: 0;
