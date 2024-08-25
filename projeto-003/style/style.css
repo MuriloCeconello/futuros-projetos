@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --color1: #3a4359;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -27,35 +31,31 @@ header h1 {
 
 #burger-menu {
     position: fixed;
-    left: 90%;
-    font-size: 22px;
+    right: 20px;
+    font-size: 26px;
     width: 40px;
     height: 40px;
-    line-height: 40px;
+    line-height: 55px;
     text-align: center;
     cursor: pointer;
+    color: var(--color1);
 }
 
-menu {
+#menu {
     display: none;
     position: fixed;
-    top: 7%;
+    top: 0;
     background-color: #ffffff;
     width: 100vw;
     height: 100vh;
 }
 
-
-menu .link-name {
-    margin-top: 30px;
-}
-
-menu a {
+#menu a {
     text-decoration: none;
     color: #000000;
 }
 
-menu li {
+#menu li {
     list-style: none;
     position: relative;
     font-size: 1.1em;
@@ -63,7 +63,7 @@ menu li {
     border: 0;
 }
 
-menu li::after {
+#menu li::after {
     content: '';
     position: absolute;
     left: 0;
@@ -75,32 +75,39 @@ menu li::after {
     transition: .5s;
 }
 
-#country {
-    position: fixed;
-    left: 20px;
-    display: flex;
-    align-items: center;
+#menu .link-name {
+    margin-top: 30px;
 }
 
-.flag-btn {
+#menu h1{
+    text-align: justify;
+}
+
+#flag-menu {
+    position: fixed;
+    left: 20px;
+    font-size: 26px;
     width: 40px;
     height: 40px;
-    font-size: 25px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
     cursor: pointer;
+    color: var(--color1);
+}
+
+#flag-img {
+    position: fixed;
 }
 
 #menu-country {
     display: none;
-    align-items: center;
     position: fixed;
-    left: 0;
-    top: 7%;
+    top: 0;
     background-color: #ffffff;
-    height: 20vh;
+    height: 80vh;
     width: 100vw;
 }
+
 
 #menu-country a {
     text-decoration: none;
@@ -115,30 +122,47 @@ menu li::after {
     left: 50px;
 }
 
-#menu-country li::after{
+#menu-country li::after {
     content: '';
     position: absolute;
-    width: 80%;
+    width: 70%;
     height: 2px;
     top: 30px;
     left: 0;
     background-color: #000000;
     transform: scaleX(1);
-
 }
 
-.link-flag{
-    margin-top: 50px;
+#menu-country ul {
+    margin-top: 10%;
 }
 
-.flags{
+#menu-country h1 {
+    text-align: justify;
+    padding: 20px;
+}
+
+.close-btn {
+    position: fixed;
+    font-size: 30px;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+    color: var(--color1);
+}
+
+.link-flag {
+    margin: 50px 0 50px;
+}
+
+.flags {
     position: fixed;
     left: 10px;
 }
 
-#sociais{
+#sociais {
     position: fixed;
     bottom: 10px;
-    left: 40%;
+    left: 50%;
     font-size: 25px;
 }

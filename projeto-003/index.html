@@ -11,11 +11,35 @@
 
 <body onresize="mudouTela()">
     <header>
-        <div id="country">
-            <i class='bx bx-chevron-down flag-btn' onclick="clickMenuCountry()"></i>
-            <img src="images/brazil.png" alt="Brazil flag">
+        <h1>Logo</h1>
+        <div id="burger-menu">
+            <i class='bx bx-menu' onclick="clickMenu()"></i>
+        </div>
 
-            <ul id="menu-country">
+        <menu id="menu">
+            <h1>Logo</h1>
+            <i class='bx bx-x close-btn' onclick="clickCloseMenu()"></i>
+            <ul>
+                <li class="link-name"><a href="#">Painel</a></li>
+                <li class="link-name"><a href="#">Suporte</a></li>
+                <li class="link-name"><a href="#">Contato</a></li>
+            </ul>
+
+            <div id="sociais">
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </menu>
+
+        <div id="flag-menu">
+            <i class='bx bx-chevron-down' onclick="clickMenuCountry()"><img src="images/brazil.png" id="flag-img" alt="Brazil flag"></i>
+        </div>
+
+
+        <menu id="menu-country">
+            <h1>Logo</h1>
+            <i class='bx bx-x close-btn' onclick="clickCloseMenuCountry()"></i>
+            <ul>
                 <li class="link-flag">
                     <img class="flags" src="images/united-states.png" alt="United-States flag">
                     <a href="united-states/index-us.html">English-Inglês</a>
@@ -25,23 +49,6 @@
                     <a href="spain/index-esp.html">Spanish-Espanhol</a>
                 </li>
             </ul>
-        </div>
-        <h1>Logo</h1>
-        <div id="burger-menu">
-            <i class='bx bx-menu' onclick="clickMenu()"></i>
-        </div>
-
-        <menu id="menu">
-            <ul>
-                <li class="link-name"><a href="#">Painel</a></li>
-                <li class="link-name"><a href="#">Suporte</a></li>
-                <li class="link-name"><a href="#">Contato</a></li>
-            </ul>
-
-                <div id="sociais">
-                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                </div>
         </menu>
     </header>
 
