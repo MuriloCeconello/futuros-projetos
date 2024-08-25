@@ -97,6 +97,21 @@ header h1 {
 
 #flag-img {
     position: fixed;
+    top: 23px;
+    height: 40px;
+
+    animation-name: flags-img;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes flags-img{
+    0%{
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 #menu-country {
@@ -118,7 +133,7 @@ header h1 {
     position: relative;
     font-size: 1.1em;
     border: 0;
-    left: 50px;
+    left: 60px;
 }
 
 #menu-country li::after {
@@ -157,6 +172,7 @@ header h1 {
 .flags {
     position: fixed;
     left: 10px;
+    height: 40px;
 }
 
 #sociais {

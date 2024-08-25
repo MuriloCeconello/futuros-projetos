@@ -1,5 +1,6 @@
 var menu = document.getElementById('menu')
 var flagMenu = document.getElementById('flag-menu')
+var flagImg = document.getElementById('flag-img')
 var menuCountry = document.getElementById('menu-country')
 
 function mudouTela() {
@@ -23,6 +24,7 @@ function clickMenu() {
 
 function clickCloseMenu() {
     flagMenu.style.display = 'block'
+    flagImg.style.animationIterationCount  = '0'
     if (menu.style.display == 'block') {
         menu.style.display = 'none'
     } else {
