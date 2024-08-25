@@ -162,8 +162,10 @@ header h1 {
 
 #sociais {
     position: fixed;
-    bottom: 10px;
-    text-align: center;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
     font-size: 25px;
+    height: 40px;
+    width: 100vw;
 }
