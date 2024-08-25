@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idk3</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onresize="mudouTela()">
+    <header>
+        <div id="country">
+            <i class='bx bx-chevron-down flag-btn' onclick="clickMenuCountry()"></i>
+            <img src="../images/united-states.png" alt="United-States flag">
+
+            <ul id="menu-country">
+                <li class="link-flag">
+                    <img class="flags" src="../images/brazil.png" alt="United-States flag">
+                    <a href="../brazil/index-br.html">Portuguese-Português</a>
+                </li>
+                <li class="link-flag">
+                    <img class="flags" src="../images/spain.png" alt="Spain flag">
+                    <a href="../spain/index-esp.html">Spanish-Espanhol</a>
+                </li>
+            </ul>
+        </div>
+        <h1>Logo</h1>
+        <div id="burger-menu">
+            <i class='bx bx-menu' onclick="clickMenu()"></i>
+        </div>
+
+        <menu id="menu">
+            <ul>
+                <li class="link-name"><a href="#">Dashboard</a></li>
+                <li class="link-name"><a href="#">Support</a></li>
+                <li class="link-name"><a href="#">Contact</a></li>
+            </ul>
+
+                <div id="sociais">
+                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+        </menu>
+    </header>
+
+    <script src="script-us.js"></script>
+</body>
+
+</html>
