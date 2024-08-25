@@ -1,12 +1,12 @@
-var menu = document.getElementById('menu')
+var menu = document.getElementById('menu-mobile')
 var flagMenu = document.getElementById('flag-menu')
 var flagImg = document.getElementById('flag-img')
 var menuCountry = document.getElementById('menu-country')
 
 function mudouTela() {
-    if (window.innerWidth >= 768) {
-        menu.style.display = 'block'
-        menuCountry.style.display = 'block'
+    if (window.innerWidth <= 900) {
+        menu.style.display = 'none'
+        menuCountry.style.display = 'none'
     } else {
         menu.style.display = 'none'
         menuCountry.style.display = 'none'

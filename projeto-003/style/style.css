@@ -41,7 +41,7 @@ header h1 {
     color: var(--color1);
 }
 
-#menu {
+#menu-mobile {
     display: none;
     position: fixed;
     top: 0;
@@ -50,12 +50,12 @@ header h1 {
     height: 100vh;
 }
 
-#menu a {
+#menu-mobile a {
     text-decoration: none;
     color: #000000;
 }
 
-#menu li {
+#menu-mobile li {
     list-style: none;
     position: relative;
     font-size: 1.1em;
@@ -63,7 +63,7 @@ header h1 {
     border: 0;
 }
 
-#menu li::after {
+#menu-mobile li::after {
     content: '';
     position: absolute;
     left: 0;
@@ -75,11 +75,11 @@ header h1 {
     transition: .5s;
 }
 
-#menu .link-name {
+#menu-mobile .link-name {
     margin-top: 30px;
 }
 
-#menu h1 {
+#menu-mobile h1 {
     text-align: justify;
 }
 
@@ -183,4 +183,16 @@ header h1 {
     font-size: 25px;
     height: 40px;
     width: 100vw;
+}
+
+/*
+    DESKTOP
+*/
+
+#menu-desktop{
+    display: none;
+}
+
+#box{
+    display: none;
 }

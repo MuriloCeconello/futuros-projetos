@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>idk3</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -16,7 +17,7 @@
             <i class='bx bx-menu' onclick="clickMenu()"></i>
         </div>
 
-        <menu id="menu">
+        <menu id="menu-mobile">
             <h1>Logo</h1>
             <i class='bx bx-x close-btn' onclick="clickCloseMenu()"></i>
             <ul>
@@ -26,12 +27,22 @@
             </ul>
 
             <div id="sociais">
-                <a href="https://www.instagram.com/ceconellomurilo/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.instagram.com/ceconellomurilo/" target="_blank"><i
+                        class='bx bxl-instagram-alt'></i></a>
             </div>
         </menu>
 
+        <menu id="menu-desktop">
+            <ul>
+                <li class="link-desktop"><a href="#">Painel</a></li>
+                <li class="link-desktop"><a href="#">Suporte</a></li>
+                <li class="link-desktop"><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+
         <div id="flag-menu">
-            <i class='bx bx-chevron-down' onclick="clickMenuCountry()"><img src="images/brazil.png" id="flag-img" alt="Brazil flag"></i>
+            <i class='bx bx-chevron-down' onclick="clickMenuCountry()"><img src="images/brazil.png" id="flag-img"
+                    alt="Brazil flag"></i>
         </div>
 
 
@@ -49,8 +60,17 @@
                 </li>
             </ul>
         </menu>
-    </header>
 
+        <div id="box">
+            <input type="checkbox" id="check">
+            <div id="search-box">
+                <input type="text" placeholder="Digite aqui...">
+                <label for="check" id="search-icon">
+                    <i class='bx bx-search'></i> 
+                </label>
+            </div>
+        </div>
+    </header>
     <script src="script.js"></script>
 </body>
 
