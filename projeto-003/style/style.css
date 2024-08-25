@@ -163,6 +163,7 @@ header h1 {
 #sociais {
     position: fixed;
     bottom: 10px;
+    text-align: center;
     left: 50%;
     font-size: 25px;
 }
