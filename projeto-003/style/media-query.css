@@ -6,6 +6,7 @@
 
 /*
         POSSIVEL MUDANÇA: CRIAR UM QUERY DE 769px ATÉ 901px
+            CONFERIR O SITE PARA VER OQUE PRECISA MUDAR
 */
 
 @media screen and (min-width: 901px) {
@@ -19,6 +20,8 @@
 
     .close-btn {
         left: 20px;
+        width: 40px;
+        height: 40px;
     }
 
     #menu-desktop {

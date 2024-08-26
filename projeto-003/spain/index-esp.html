@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="esp">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>idk3</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media-query.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -16,7 +17,7 @@
             <i class='bx bx-menu' onclick="clickMenu()"></i>
         </div>
 
-        <menu id="menu">
+        <menu id="menu-mobile">
             <h1>Logo</h1>
             <i class='bx bx-x close-btn' onclick="clickCloseMenu()"></i>
             <ul>
@@ -31,28 +32,44 @@
             </div>
         </menu>
 
+        <menu id="menu-desktop">
+            <ul>
+                <li class="link-desktop"><a href="#">Panel</a></li>
+                <li class="link-desktop"><a href="#">Apoyo</a></li>
+                <li class="link-desktop"><a href="#">Contacto</a></li>
+            </ul>
+        </menu>
+
         <div id="flag-menu">
             <i class='bx bx-chevron-down' onclick="clickMenuCountry()"><img src="../images/spain.png" id="flag-img"
                     alt="Spain flag"></i>
         </div>
-
 
         <menu id="menu-country">
             <h1>Logo</h1>
             <i class='bx bx-x close-btn' onclick="clickCloseMenuCountry()"></i>
             <ul>
                 <li class="link-flag">
-                    <img class="flags" src="../images/united-states.png" alt="United-States flag">
-                    <a href="../united-states/index-us.html">English-Inglês</a>
-                </li>
-                <li class="link-flag">
                     <img class="flags" src="../images/brazil.png" alt="Brazil flag">
                     <a href="../index.html">Portuguese-Português</a>
                 </li>
+                <li class="link-flag">
+                    <img class="flags" src="../images/united-states.png" alt="United-States flag">
+                    <a href="../united-states/index-us.html">English-Inglês</a>
+                </li>
             </ul>
         </menu>
-    </header>
 
+        <div id="box">
+            <input type="checkbox" id="check">
+            <div id="search-box">
+                <input type="text" placeholder="Digite aqui...">
+                <label for="check" id="search-icon">
+                    <i class='bx bx-search'></i>
+                </label>
+            </div>
+        </div>
+    </header>
     <script src="../script.js"></script>
 </body>
 

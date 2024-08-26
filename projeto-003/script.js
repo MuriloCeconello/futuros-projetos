@@ -2,6 +2,7 @@ var menu = document.getElementById('menu-mobile')
 var flagMenu = document.getElementById('flag-menu')
 var flagImg = document.getElementById('flag-img')
 var menuCountry = document.getElementById('menu-country')
+var searchBox = document.getElementById('search-box')
 
 function mudouTela() {
     if (window.innerWidth <= 900) {
@@ -43,6 +44,7 @@ function clickMenuCountry() {
         }
     } else {
         menuCountry.style.display = 'block'
+        searchBox.style.display = 'none'
     }
 
 }
@@ -50,7 +52,9 @@ function clickMenuCountry() {
 function clickCloseMenuCountry() {
     if (menuCountry.style.display == 'block') {
         menuCountry.style.display = 'none'
+        searchBox.style.display = 'block'
     } else {
         menuCountry.style.display = 'block'
+        
     }
 }
