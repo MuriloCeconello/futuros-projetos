@@ -22,6 +22,8 @@ function mudouTela() {
         searchBox.style.display = 'block'
     }
     flagMenu.style.display = 'block'
+    flagImg.style.animationIterationCount = '0'
+
 }
 
 function clickMenu() {
