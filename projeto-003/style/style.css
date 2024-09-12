@@ -30,7 +30,7 @@ header h1 {
 }
 
 #burger-menu {
-    position: fixed;
+    position: absolute;
     right: 20px;
     font-size: 26px;
     width: 40px;
@@ -84,7 +84,7 @@ header h1 {
 }
 
 #flag-menu {
-    position: fixed;
+    position: absolute;
     left: 20px;
     font-size: 26px;
     width: 40px;
@@ -96,8 +96,8 @@ header h1 {
 }
 
 #flag-img {
-    position: fixed;
-    top: 23px;
+    position: absolute;
+    top: 0;
     height: 40px;
 
     animation-name: flags-img;
